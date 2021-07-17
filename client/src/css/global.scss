@@ -1,0 +1,19 @@
+@import "../css/styleguide.scss";
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  min-height: 100%;
+
+
+}
+body {
+  height: 100%;
+}
+
+#root,
+.App {
+  height: auto;
+}

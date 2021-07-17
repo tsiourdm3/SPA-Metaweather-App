@@ -1,0 +1,51 @@
+@import "../../css/styleguide.scss";
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: center;
+    font-size: 32px; 
+    width: 100%; 
+ 
+
+    & > * {
+        border: none;
+        border-radius: 0;        
+        outline: none;
+        height: 64px;
+        margin: 20px 0 0 0;
+    }
+
+    input {
+        margin: 0;
+        padding: $formPadding;
+        width: inherit;
+        background: transparent;
+        border: $border;   
+
+    }
+
+    ::placeholder {
+        color: inherit;
+    }
+
+
+    button {
+        border: $border;
+        background-color: inherit;
+        text-transform: uppercase;
+        margin: 0 0 0 24px;
+        width: 70px;
+        break-after: always;
+
+        padding: 0;
+        font-size: 16px;
+        transition-duration: $hoverTransitionDuration;
+
+        &:hover {
+            color: hsla(0, 0%, 75%, 0.7);
+            border-color: hsla(0, 0%, 75%, 0.7);
+           
+        }
+    }
+}

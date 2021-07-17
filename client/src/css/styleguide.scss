@@ -1,0 +1,49 @@
+// Colors
+$fontBlack: hsl(0, 0%, 10%);
+$fontWhite: hsla(0, 0%, 100%, 0.7);
+$background: linear-gradient(180deg, #2c5364 0%, #203a43 50%, #0f2027 100%);
+$backgroundCold: linear-gradient(180deg, #a7bfe8 0%, #6190e8 100%);
+$backgroundWarm: linear-gradient(180deg, #F7AF9D 0%, #FFF689 100%);
+$backgroundSnow: linear-gradient(180deg, #f0f2f0 0%, #000c40 100%);
+$secondaryOpacity: hsla(0, 0%, 75%, 0.7);
+
+// Font Sizes
+$fontSmall: 16px;
+$fontMedium: 18px;
+$fontLarge: 20px;
+$fontXL: 28px;
+$fontXXL: 36px;
+$fontXXXL: 72px;
+
+
+$fontMain: helvetica;
+$fontBold: helvetica;
+
+// Breakpoints
+$mobileBreakpointMin: 320px;
+$mobileBreakpointMax: 767px;
+$tabletBreakpointMin: 768px;
+$tabletBreakpointMax: 1023px;
+$desktopBreakpointMin: 1024px;
+
+// Misc. Styles
+$formPadding: 10px;
+$layoutPadding: 120px;
+$textShadow: 0 2px 15px hsla(0, 0%, 0%, 0.2);
+$border: 3px solid $fontBlack;
+$headerHeight: 66px;
+
+// Animations
+$hoverTransitionDuration: 0.4s;
+@mixin fadeIn {
+  animation: fadeIn 1s;
+}
+
+@mixin loader {
+  border: 3px solid $fontBlack; /* Light grey */
+  border-top: 3px solid $secondaryOpacity; /* Blue */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 2s linear infinite, fadeIn 1s;
+}
